@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#08051e">
+
+  <meta name="description" content="Món quà vũ trụ dành riêng cho Ngọc Yến, từ Huy Sang.">
+
+  <title>To My Ngọc Yến ✨ | 20/10</title>
+
+  <style>
+
+    :root {
+
+      --pink: #ff6bc8;
+
+      --purple: #a875ff;
+
+      --blue: #6be6ff;
+
+      --white: #fff4ff;
+
+    }
+
+    * {
+
+      box-sizing: border-box;
+
+      margin: 0;
+
+      padding: 0;
+
+    }
+
+    html {
+
+      scroll-behavior: smooth;
+
+    }
+
+    body {
+
+      min-height: 100vh;
+
+      min-height: 100svh;
+
+      overflow-x: hidden;
+
+      background: #08051e;
+
+      color: var(--white);
+
+      font-family: "Segoe UI", Arial, sans-serif;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      padding: 28px 15px;
+
+      isolation: isolate;
+
+    }
+
+    /* Nền ngân hà */
+
+    .universe {
+
+      position: fixed;
+
+      inset: 0;
+
+      z-index: -3;
+
+      overflow: hidden;
+
+      background:
+
+        radial-gradient(ellipse at 50% 42%,
+
+          rgba(103, 30, 150, .35), transparent 45%),
+
+        radial-gradient(ellipse at 15% 20%,
+
+          rgba(30, 72, 145, .28), transparent 40%),
+
+        linear-gradient(145deg, #08051e, #16082e 55%, #030817);
+
+    }
+
+    .nebula {
+
+      position: absolute;
+
+      width: 85vw;
+
+      height: 85vw;
+
+      max-width: 700px;
+
+      max-height: 700px;
+
+      border-radius: 50%;
+
+      filter: blur(65px);
+
+      opacity: .2;
+
+      animation: nebulaMove 18s ease-in-out infinite alternate;
+
+    }
+
+    .nebula.one {
+
+      background: #9e28d5;
+
+      top: -30%;
+
+      left: -25%;
+
+    }
+
+    .nebula.two {
+
+      background: #175bda;
+
+      right: -30%;
+
+      bottom: -30%;
+
+      animation-delay: -8s;
+
+    }
+
+    @keyframes nebulaMove {
+
+      to {
+
+        transform: translate(12vw, 10vh) scale(1.2);
+
+      }
+
+    }
+
+    #stars {
+
+      position: fixed;
+
+      inset: 0;
+
+      z-index: -1;
+
+      pointer-events: none;
+
+      overflow: hidden;
+
+    }
+
+    .star {
+
+      position: absolute;
+
+      border-radius: 50%;
+
+      background: white;
+
+      box-shadow: 0 0 7px rgba(255, 255, 255, .8);
+
+      animation: twinkle var(--duration) ease-in-out infinite alternate;
+
+    }
+
+    @keyframes twinkle {
+
+      from { opacity: .15; transform: scale(.7); }
+
+      to { opacity: 1; transform: scale(1.4); }
+
+    }
+
+    /* Vệt sao băng */
+
+    .shooting-star {
+
+      position: fixed;
+
+      top: 10%;
+
+      left: -20%;
+
+      width: 130px;
+
+      height: 2px;
+
+      z-index: -1;
+
+      pointer-events: none;
+
+      background: linear-gradient(90deg, transparent, #b9f4ff, white);
+
+      filter: drop-shadow(0 0 6px #8adfff);
+
+      transform: rotate(-25deg);
+
+      animation: shooting 7s linear infinite;
+
+    }
+
+    @keyframes shooting {
+
+      0%, 68% {
+
+        opacity: 0;
+
+        transform: translate(0, 0) rotate(-25deg);
+
+      }
+
+      70% { opacity: 1; }
+
+      85% {
+
+        opacity: 0;
+
+        transform: translate(145vw, 55vh) rotate(-25deg);
+
+      }
+
+      100% { opacity: 0; }
+
+    }
+
+    .card {
+
+      width: 100%;
+
+      max-width: 440px;
+
+      padding: 30px 22px;
+
+      position: relative;
+
+      text-align: center;
+
+      border-radius: 28px;
+
+      border: 1px solid rgba(190, 151, 255, .35);
+
+      background: rgba(13, 9, 40, .64);
+
+      box-shadow:
+
+        0 0 45px rgba(128, 67, 255, .14),
+
+        inset 0 0 35px rgba(133, 77, 255, .05);
+
+      backdrop-filter: blur(12px);
+
+      -webkit-backdrop-filter: blur(12px);
+
+    }
+
+    .badge {
+
+      display: inline-block;
+
+      padding: 8px 13px;
+
+      border: 1px solid rgba(191, 157, 255, .4);
+
+      border-radius: 30px;
+
+      color: #d9c4ff;
+
+      font-size: 11px;
+
+      letter-spacing: 2.5px;
+
+      margin-bottom: 17px;
+
+    }
+
+    h1 {
+
+      font-size: clamp(27px, 7vw, 35px);
+
+      line-height: 1.35;
+
+      color: #f8d6ff;
+
+      text-shadow: 0 0 20px rgba(201, 121, 255, .7);
+
+    }
+
+    .subtitle {
+
+      margin-top: 10px;
+
+      font-size: 14px;
+
+      line-height: 1.8;
+
+      color: #c9c6f9;
+
+    }
+
+    /* Vũ trụ xoay quanh trái tim */
+
+    .cosmos {
+
+      position: relative;
+
+      height: 250px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      margin: 0 auto 4px;
+
+      overflow: hidden;
+
+    }
+
+    .aura {
+
+      position: absolute;
+
+      width: 155px;
+
+      height: 155px;
+
+      border-radius: 50%;
+
+      background: radial-gradient(circle,
+
+        rgba(255, 70, 199, .23),
+
+        rgba(117, 62, 255, .12) 45%,
+
+        transparent 72%);
+
+      animation: auraPulse 2.5s ease-in-out infinite;
+
+    }
+
+    @keyframes auraPulse {
+
+      50% { transform: scale(1.4); opacity: .6; }
+
+    }
+
+    .orbit {
+
+      position: absolute;
+
+      width: 205px;
+
+      height: 85px;
+
+      border: 1px solid rgba(171, 158, 255, .65);
+
+      border-radius: 50%;
+
+      transform: rotate(-30deg);
+
+      box-shadow: 0 0 10px rgba(160, 130, 255, .2);
+
+    }
+
+    .orbit.two {
+
+      width: 220px;
+
+      height: 100px;
+
+      transform: rotate(48deg);
+
+      border-color: rgba(255, 120, 220, .5);
+
+    }
+
+    .orbit.three {
+
+      width: 180px;
+
+      height: 180px;
+
+      transform: rotate(65deg);
+
+      border-color: rgba(101, 222, 255, .3);
+
+      border-style: dashed;
+
+    }
+
+    .heart-wrap {
+
+      position: relative;
+
+      width: 100px;
+
+      height: 100px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      animation: heartBeat 1.15s ease-in-out infinite;
+
+      z-index: 2;
+
+    }
+
+    .heart {
+
+      position: relative;
+
+      width: 64px;
+
+      height: 64px;
+
+      background: linear-gradient(135deg, #ffb0f2, #ff39ae 45%, #b128ff);
+
+      transform: rotate(-45deg);
+
+      border-radius: 8px 0 8px 0;
+
+      box-shadow:
+
+        0 0 15px #ff62ce,
+
+        0 0 40px rgba(255, 42, 195, .85),
+
+        0 0 75px rgba(167, 66, 255, .6);
+
+    }
+
+    .heart::before,
+
+    .heart::after {
+
+      content: "";
+
+      position: absolute;
+
+      width: 64px;
+
+      height: 64px;
+
+      border-radius: 50%;
+
+      background: linear-gradient(135deg, #ffb0f2, #ff39ae 55%, #b128ff);
+
+    }
+
+    .heart::before {
+
+      top: -32px;
+
+      left: 0;
+
+    }
+
+    .heart::after {
+
+      top: 0;
+
+      left: 32px;
+
+    }
+
+    @keyframes heartBeat {
+
+      0%, 100% { transform: scale(1); }
+
+      15% { transform: scale(1.12); }
+
+      30% { transform: scale(1); }
+
+      45% { transform: scale(1.17); }
+
+      60% { transform: scale(1); }
+
+    }
+
+    .planet {
+
+      position: absolute;
+
+      width: 13px;
+
+      height: 13px;
+
+      border-radius: 50%;
+
+      background: linear-gradient(135deg, #d8fbff, #65baff 60%, #7d5cff);
+
+      box-shadow: 0 0 15px #74ceff;
+
+      top: 45px;
+
+      left: 50%;
+
+      transform-origin: 0 80px;
+
+      animation: planetOrbit 5s linear infinite;
+
+    }
+
+    @keyframes planetOrbit {
+
+      from { transform: rotate(0deg) translateX(98px); }
+
+      to { transform: rotate(360deg) translateX(98px); }
+
+    }
+
+    .floating-heart {
+
+      position: absolute;
+
+      font-size: 19px;
+
+      filter: drop-shadow(0 0 7px #ff65d5);
+
+      animation: float 3s ease-in-out infinite;
+
+    }
+
+    .floating-heart.left {
+
+      left: 12%;
+
+      top: 35%;
+
+    }
+
+    .floating-heart.right {
+
+      right: 12%;
+
+      bottom: 30%;
+
+      animation-delay: -1.5s;
+
+    }
+
+    @keyframes float {
+
+      50% { transform: translateY(-12px) rotate(12deg); }
+
+    }
+
+    .wish {
+
+      color: #e9e0ff;
+
+      font-size: 14px;
+
+      line-height: 2;
+
+      margin: 5px 0 23px;
+
+    }
+
+    .wish strong {
+
+      color: #ffb4e9;
+
+    }
+
+    .open-button {
+
+      width: 100%;
+
+      max-width: 270px;
+
+      padding: 14px 18px;
+
+      border: 1px solid rgba(255, 198, 247, .5);
+
+      border-radius: 40px;
+
+      color: white;
+
+      background: linear-gradient(110deg, #873bdb, #e341b1, #823ee5);
+
+      background-size: 200% 100%;
+
+      font-size: 14px;
+
+      font-weight: bold;
+
+      cursor: pointer;
+
+      box-shadow: 0 0 24px rgba(206, 75, 255, .35);
+
+      transition: transform .2s;
+
+      animation: buttonGlow 4s ease infinite;
+
+      -webkit-tap-highlight-color: transparent;
+
+    }
+
+    .open-button:active {
+
+      transform: scale(.96);
+
+    }
+
+    @keyframes buttonGlow {
+
+      50% { background-position: 100% 0; }
+
+    }
+
+    .letter {
+
+      display: none;
+
+      margin-top: 22px;
+
+      padding: 20px 16px;
+
+      text-align: left;
+
+      border-radius: 18px;
+
+      border: 1px solid rgba(194, 157, 255, .4);
+
+      background: rgba(105, 55, 155, .15);
+
+      animation: reveal .65s ease both;
+
+    }
+
+    .letter h2 {
+
+      text-align: center;
+
+      color: #ffb7e8;
+
+      font-size: 21px;
+
+      margin-bottom: 14px;
+
+    }
+
+    .letter p {
+
+      color: #eee6ff;
+
+      font-size: 14px;
+
+      line-height: 1.95;
+
+      white-space: pre-line;
+
+    }
+
+    .signature {
+
+      margin-top: 18px;
+
+      text-align: right;
+
+      color: #ffb5e9;
+
+      font-weight: bold;
+
+      line-height: 1.8;
+
+    }
+
+    @keyframes reveal {
+
+      from { opacity: 0; transform: translateY(15px); }
+
+      to { opacity: 1; transform: translateY(0); }
+
+    }
+
+    .footer {
+
+      margin-top: 25px;
+
+      color: #a9a0d4;
+
+      font-size: 11px;
+
+      letter-spacing: 2px;
+
+    }
+
+    .footer span {
+
+      color: #ff7fd5;
+
+    }
+
+    .particle {
+
+      position: fixed;
+
+      z-index: 5;
+
+      top: -30px;
+
+      pointer-events: none;
+
+      animation: particleFall linear forwards;
+
+    }
+
+    @keyframes particleFall {
+
+      to {
+
+        transform: translate(var(--drift), 110vh) rotate(540deg);
+
+        opacity: 0;
+
+      }
+
+    }
+
+    @media (max-width: 360px) {
+
+      .card { padding: 25px 16px; }
+
+      .cosmos { height: 220px; }
+
+      .orbit { width: 180px; }
+
+      .orbit.two { width: 190px; }
+
+      .wish { font-size: 13px; }
+
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+      *, *::before, *::after {
+
+        animation-duration: .01ms !important;
+
+        animation-iteration-count: 1 !important;
+
+        scroll-behavior: auto !important;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="universe" aria-hidden="true">
+
+    <div class="nebula one"></div>
+
+    <div class="nebula two"></div>
+
+  </div>
+
+  <div id="stars" aria-hidden="true"></div>
+
+  <div class="shooting-star" aria-hidden="true"></div>
+
+  <main class="card">
+
+    <div class="badge">A MESSAGE FROM THE UNIVERSE</div>
+
+    <h1>Happy 20/10 ✨<br>Ngọc Yến</h1>
+
+    <p class="subtitle">
+
+      Giữa hàng tỷ vì sao,<br>
+
+      mong bạn luôn là ánh sáng rực rỡ nhất.
+
+    </p>
+
+    <section class="cosmos" aria-label="Trái tim phát sáng giữa ngân hà">
+
+      <div class="aura"></div>
+
+      <div class="orbit"></div>
+
+      <div class="orbit two"></div>
+
+      <div class="orbit three"></div>
+
+      <div class="heart-wrap">
+
+        <div class="heart"></div>
+
+      </div>
+
+      <div class="planet"></div>
+
+      <div class="floating-heart left">💗</div>
+
+      <div class="floating-heart right">✨</div>
+
+    </section>
+
+    <p class="wish">
+
+      Chúc <strong>Ngọc Yến</strong> có một ngày 20/10
+
+      thật ngọt ngào và đáng nhớ. 🌷<br>
+
+      Luôn xinh đẹp, bình an, hạnh phúc<br>
+
+      và được yêu thương thật nhiều. 💜<br>
+
+      <strong>Mong mọi ước mơ của bạn đều thành hiện thực!</strong>
+
+    </p>
+
+    <button
+
+      class="open-button"
+
+      id="openButton"
+
+      type="button"
+
+      aria-expanded="false"
+
+      aria-controls="letter"
+
+    >
+
+      ✉ Mở thông điệp từ vũ trụ
+
+    </button>
+
+    <section class="letter" id="letter" aria-live="polite">
+
+      <h2>To: Ngọc Yến 🌙</h2>
+
+      <p>Gửi Ngọc Yến,
+
+Nếu vũ trụ có hàng tỷ vì sao, thì mình mong bạn sẽ luôn tỏa sáng theo cách riêng của mình.
+
+Nhân ngày 20/10, Huy Sang chúc Yến luôn vui vẻ, xinh đẹp, gặp nhiều may mắn và có thật nhiều khoảnh khắc đáng nhớ.
+
+Mong rằng dù ngày mai có ra sao, bạn vẫn luôn giữ được nụ cười, sự tự tin và trái tim ấm áp của mình.
+
+Và nếu có lúc cảm thấy mệt mỏi, hãy nhớ rằng sau màn đêm, những vì sao vẫn luôn tỏa sáng. ✨
+
+Chúc cô gái đặc biệt của hôm nay có một ngày thật tuyệt vời! 💖</p>
+
+      <div class="signature">
+
+        From: Huy Sang 🚀<br>
+
+        <span style="font-weight: normal">Gửi bạn một vũ trụ yêu thương.</span>
+
+      </div>
+
+    </section>
+
+    <div class="footer">
+
+      MADE WITH <span>♥</span> BY HUY SANG
+
+    </div>
+
+  </main>
+
+  <script>
+
+    // Tạo bầu trời sao, giới hạn số lượng để chạy mượt trên điện thoại.
+
+    const stars = document.getElementById("stars");
+
+    const starCount = window.innerWidth < 500 ? 65 : 110;
+
+    for (let i = 0; i < starCount; i++) {
+
+      const star = document.createElement("span");
+
+      star.className = "star";
+
+      const size = Math.random() * 2.5 + 1;
+
+      star.style.width = size + "px";
+
+      star.style.height = size + "px";
+
+      star.style.left = Math.random() * 100 + "%";
+
+      star.style.top = Math.random() * 100 + "%";
+
+      star.style.setProperty(
+
+        "--duration",
+
+        (1.5 + Math.random() * 3) + "s"
+
+      );
+
+      stars.appendChild(star);
+
+    }
+
+    // Mở hoặc đóng lá thư.
+
+    const button = document.getElementById("openButton");
+
+    const letter = document.getElementById("letter");
+
+    button.addEventListener("click", () => {
+
+      const isOpen = letter.style.display === "block";
+
+      letter.style.display = isOpen ? "none" : "block";
+
+      button.textContent = isOpen
+
+        ? "✉ Mở thông điệp từ vũ trụ"
+
+        : "💖 Đóng thông điệp";
+
+      button.setAttribute("aria-expanded", String(!isOpen));
+
+      if (!isOpen) {
+
+        for (let i = 0; i < 22; i++) {
+
+          setTimeout(createParticle, i * 80);
+
+        }
+
+        letter.scrollIntoView({
+
+          behavior: "smooth",
+
+          block: "nearest"
+
+        });
+
+      }
+
+    });
+
+    // Sao và trái tim bay khi mở thư.
+
+    const symbols = ["✨", "💜", "💗", "🌟", "🌸", "💕"];
+
+    function createParticle() {
+
+      const particle = document.createElement("span");
+
+      particle.className = "particle";
+
+      particle.textContent =
+
+        symbols[Math.floor(Math.random() * symbols.length)];
+
+      particle.style.left = Math.random() * 100 + "vw";
+
+      particle.style.fontSize = (12 + Math.random() * 17) + "px";
+
+      particle.style.setProperty(
+
+        "--drift",
+
+        (Math.random() * 160 - 80) + "px"
+
+      );
+
+      particle.style.animationDuration =
+
+        (3.5 + Math.random() * 3) + "s";
+
+      document.body.appendChild(particle);
+
+      particle.addEventListener("animationend", () => particle.remove());
+
+    }
+
+    // Hiệu ứng bay nhẹ liên tục.
+
+    setInterval(createParticle, 950);
+
+  </script>
+
+</body>
+
+</html>
